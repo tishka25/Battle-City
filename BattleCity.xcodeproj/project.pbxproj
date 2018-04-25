@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41490160208F99C800CA1EED /* MapFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4149015F208F99C800CA1EED /* MapFile.txt */; };
 		418FC23A2080FFB800465E20 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 418FC2392080FFB800465E20 /* ResourcePath.mm */; };
 		418FC23D2080FFB800465E20 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 418FC23C2080FFB800465E20 /* main.cpp */; };
 		418FC2402080FFB800465E20 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418FC23F2080FFB800465E20 /* cute_image.jpg */; };
 		418FC2422080FFB800465E20 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 418FC2412080FFB800465E20 /* nice_music.ogg */; };
 		418FC2442080FFB800465E20 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 418FC2432080FFB800465E20 /* sansation.ttf */; };
 		418FC2462080FFB800465E20 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 418FC2452080FFB800465E20 /* icon.png */; };
+		418FC25020810CAC00465E20 /* tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 418FC24F20810CAC00465E20 /* tank.png */; };
+		418FC25420810CF300465E20 /* bricks.png in Resources */ = {isa = PBXBuildFile; fileRef = 418FC25320810CF300465E20 /* bricks.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4149015C208F925600CA1EED /* MainMenu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenu.hpp; sourceTree = "<group>"; };
+		4149015F208F99C800CA1EED /* MapFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MapFile.txt; sourceTree = "<group>"; };
 		418FC2342080FFB800465E20 /* BattleCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418FC2382080FFB800465E20 /* BattleCity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BattleCity-Info.plist"; sourceTree = "<group>"; };
 		418FC2392080FFB800465E20 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -25,6 +30,9 @@
 		418FC2412080FFB800465E20 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
 		418FC2432080FFB800465E20 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		418FC2452080FFB800465E20 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		418FC24D208109E700465E20 /* GameObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameObject.hpp; sourceTree = "<group>"; };
+		418FC24F20810CAC00465E20 /* tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tank.png; sourceTree = "<group>"; };
+		418FC25320810CF300465E20 /* bricks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bricks.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,10 @@
 			children = (
 				418FC2392080FFB800465E20 /* ResourcePath.mm */,
 				418FC23B2080FFB800465E20 /* ResourcePath.hpp */,
+				4149015F208F99C800CA1EED /* MapFile.txt */,
 				418FC23C2080FFB800465E20 /* main.cpp */,
+				4149015C208F925600CA1EED /* MainMenu.hpp */,
+				418FC24D208109E700465E20 /* GameObject.hpp */,
 				418FC23E2080FFB800465E20 /* Resources */,
 				418FC2372080FFB800465E20 /* Supporting Files */,
 			);
@@ -77,6 +88,8 @@
 		418FC23E2080FFB800465E20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				418FC25320810CF300465E20 /* bricks.png */,
+				418FC24F20810CAC00465E20 /* tank.png */,
 				418FC23F2080FFB800465E20 /* cute_image.jpg */,
 				418FC2412080FFB800465E20 /* nice_music.ogg */,
 				418FC2432080FFB800465E20 /* sansation.ttf */,
@@ -144,9 +157,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				418FC2462080FFB800465E20 /* icon.png in Resources */,
+				418FC25020810CAC00465E20 /* tank.png in Resources */,
 				418FC2442080FFB800465E20 /* sansation.ttf in Resources */,
+				418FC25420810CF300465E20 /* bricks.png in Resources */,
 				418FC2422080FFB800465E20 /* nice_music.ogg in Resources */,
 				418FC2402080FFB800465E20 /* cute_image.jpg in Resources */,
+				41490160208F99C800CA1EED /* MapFile.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

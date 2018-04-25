@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../BattleCity">
+   </FileRef>
+   <FileRef
       location = "self:BattleCity.xcodeproj">
    </FileRef>
 </Workspace>
