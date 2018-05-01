@@ -18,10 +18,9 @@
 using namespace sf;
 using namespace std;
 
-extern int WINDOW_HEIGHT;
-extern int WINDOW_WIDTH;
+extern float WINDOW_HEIGHT;
+extern float WINDOW_WIDTH;
 extern RenderWindow window;
-Time t;
 
 class MainMenu{
 public:
@@ -29,9 +28,11 @@ public:
     Text text;
     Font font;
     Clock clock;
+    Time t;
+
     MainMenu(){
         if(!font.loadFromFile(resourcePath()+"sansation.ttf")){
-            return EXIT_FAILURE;
+//            return EXIT_FAILURE;
         }
         text.setFont(font);
         text.setCharacterSize(24);
