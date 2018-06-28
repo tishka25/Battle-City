@@ -69,6 +69,7 @@ static void loop(){
         if(Keyboard::isKeyPressed(Keyboard::Return)){
             bullets.push_back(new Bullet(Vector2f(5,5),gameEngine.getPlayer()->getPosition(),gameEngine.getPlayer()->facingSide));
         }
+        
         for(auto &b : bullets){
             for(auto &g : gameEngine.getObjects()){
                 if(gameEngine.doObjectsOverlap(b->getPosition(),b->size.x,g->getPosition(),g->getSize().x*g->getScale().x)){
@@ -77,8 +78,8 @@ static void loop(){
                         float fOverlap=0.2f*(fDistance-b->size.x-g->getSize().x*g->scale);
                         
                         Vector2f buff=Vector2f(-fOverlap*(b->getPosition().x-g->getPosition().x)/fDistance,-fOverlap*(b->getPosition().y-g->getPosition().y)/fDistance);
-                        g->move(-buff);
-                        bullets.erase(bullets.begin()+1);
+//                        g->move(-buff);
+                        bullets.erase(bullets.begin());
                     }
                     
                 }
